@@ -1,6 +1,6 @@
-# copyright from https://github.com/DamienSoukara/FSub-Heroku.git
 import logging
 from config import Messages as tr
+from config import config
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -40,22 +40,22 @@ def help_answer(client, callback_query):
 def map(pos):
     if(pos==1):
         button = [
-            [InlineKeyboardButton(text = '▶️', callback_data = "help+2")]
+            [InlineKeyboardButton(text = 'Next▶️', callback_data = "help+2")]
         ]
     elif(pos==len(tr.HELP_MSG)-1):
         url = "https://github.com/fahrial2310/FSub-Telebot-ENG"
         button = [
-            [InlineKeyboardButton(text = '☠️ Support Chat ☠️', url="https://t.me/Alvin_image_editor_group")],
-            [InlineKeyboardButton(text = '☠️ Updates channel ☠️', url="https://t.me/Alvin_image_editor")],
+            [InlineKeyboardButton(text = '☠️ Support Chat ☠️', url="https://t.me/{SUPPORT_GRP}"),
+             InlineKeyboardButton(text = '☠️ Updates channel ☠️', url="https://t.me/{UPDATES_CH}")],
             [InlineKeyboardButton(text = '☠️ Alvin/Master UBot ☠️', url="https://t.me/Alvin_UserBot_Group")],
             [InlineKeyboardButton(text = '☠️ Source Code ☠️', url=url)],
-            [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
+            [InlineKeyboardButton(text = '◀️Back', callback_data = f"help+{pos-1}")]
         ]
     else:
         button = [
             [
-                InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}"),
-                InlineKeyboardButton(text = '▶️', callback_data = f"help+{pos+1}")
+                InlineKeyboardButton(text = '◀️Back', callback_data = f"help+{pos-1}"),
+                InlineKeyboardButton(text = 'Next▶️', callback_data = f"help+{pos+1}")
             ],
         ]
     return button
