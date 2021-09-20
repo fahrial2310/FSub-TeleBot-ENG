@@ -9,6 +9,8 @@
     "subscribe",
   ],
   "repository": "https://github.com/fahrial2310/FSub-TeleBot-ENG",
+  "website": "none",
+  "success_url": "none",
   "env": {
     "APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
