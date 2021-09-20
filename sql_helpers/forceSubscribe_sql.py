@@ -1,3 +1,4 @@
+# copyright from https://github.com/DamienSoukara/FSub-Heroku.git
 from sqlalchemy import Column, String, Numeric, Boolean
 from sql_helpers import SESSION, BASE
 
