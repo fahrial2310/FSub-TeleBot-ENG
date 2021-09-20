@@ -16,7 +16,7 @@ forceSubscribe.__table__.create(checkfirst=True)
 
 def fs_settings(chat_id):
     try:
-        return SESSION.query(forceSubscribe).filter(forceSubscribe.chat_id == chat_id).one()
+        return SESSION.query(FSub-TeleBot-ENG).filter(FSub-TeleBot-ENG.chat_id == chat_id).one()
     except:
         return None
     finally:
@@ -24,11 +24,11 @@ def fs_settings(chat_id):
 
 
 def add_channel(chat_id, channel):
-    adder = SESSION.query(forceSubscribe).get(chat_id)
+    adder = SESSION.query(FSub-TeleBot-ENG).get(chat_id)
     if adder:
         adder.channel = channel
     else:
-        adder = forceSubscribe(
+        adder = FSub-TeleBot-ENG(
             chat_id,
             channel
         )
@@ -36,7 +36,7 @@ def add_channel(chat_id, channel):
     SESSION.commit()
 
 def disapprove(chat_id):
-    rem = SESSION.query(forceSubscribe).get(chat_id)
+    rem = SESSION.query(FSub-TeleBot-ENG).get(chat_id)
     if rem:
         SESSION.delete(rem)
         SESSION.commit()
