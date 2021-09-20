@@ -17,11 +17,11 @@ app = Client(
       bot_token = Config.BOT_TOKEN,
       api_id = Config.APP_ID,
       api_hash = Config.API_HASH,
-      owner_username = config.OWNER_USERNAME,
+      owner_username = Config.OWNER_USERNAME,
       updates_ch = Config.UPDATES_CH,
       support_grp = Config.SUPPORT_GRP,
-      updates_name = config.UPDATES_NAME,
-      support_name = config.SUPPORT_NAME,
+      updates_name = Config.UPDATES_NAME,
+      support_name = Config.SUPPORT_NAME,
       plugins = plugins
 )
 
