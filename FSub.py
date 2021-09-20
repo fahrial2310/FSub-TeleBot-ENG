@@ -21,7 +21,7 @@ app = Client(
       updates_ch = Config.UPDATES_CH,
       support_grp = Config.SUPPORT_GRP,
       updates_name = config.UPDATES_NAME,
-      support_name = config.SUPPORT_NAME
+      support_name = config.SUPPORT_NAME,
       plugins = plugins
 )
 
