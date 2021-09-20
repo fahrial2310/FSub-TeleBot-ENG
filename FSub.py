@@ -1,4 +1,3 @@
-# copyright from https://github.com/DamienSoukara/FSub-Heroku.git
 import logging
 from pyrogram import Client
 from config import Config
