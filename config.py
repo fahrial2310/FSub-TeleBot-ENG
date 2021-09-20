@@ -20,7 +20,7 @@ class Messages():
         
         "[☠️](https://telegra.ph/file/fe1111b216042f2cfb883.jpg) **COMMMANDS :**\n\n/ForceSubscribe - To Get The Current Settings.\n/ForceSubscribe no/off/disable - To Turn Of ForceSubscribe.\n/ForceSubscribe {Channel Username} - To Turn On And Setup The Channel.\n/ForceSubscribe clear - To Unmute All Members Who Muted By Me.\n\n● Note: /FSub Is An Alias Of /ForceSubscribe",
         
-        "[☠️](https://telegra.ph/file/ac48f2037d79b1763d089.jpg) **DEVELOPED BY @AmineSoukara**"
+        "[☠️](https://telegra.ph/file/ac48f2037d79b1763d089.jpg) **DEVELOPED BY @Alvin_Junior**"
       ]
 
       START_MSG = "**Hey! [☠️](https://telegra.ph/file/ac48f2037d79b1763d089.jpg) [{}](tg://user?id={})**\n\nI Can Force Members To Join A Specific Channel Before Writing Messages In The Group.\n● Learn More At 👉 /help"
