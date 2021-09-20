@@ -13,15 +13,28 @@
   "env": {
     "APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
+      "required": true
       "value": ""
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org! Please do not steal",
+      "required": true
       "value": ""
     },
     "BOT_TOKEN": {
       "description": "Your Bot Token Obtained From @BotFather.",
+      "required": true
       "value": ""
+    },
+    "BOT_USERNAME": {
+      "description": "Your Bot username without @.",
+      "required": true
+      "value": ""
+    },
+    "OWNER_USERNAME": {
+      "description": "your username without @.",
+      "required": true
+      "value": "Alvin_junior"
     }
   },
   "addons": [
