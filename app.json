@@ -45,6 +45,16 @@
       "description": "your username channel without @.",
       "required": true
       "value": "Alvin_image_editor"
+    },
+    "SUPPORT_NAME": {
+      "description": "your support channel name.",
+      "required": true
+      "value": ""
+    },
+    "UPDATES_NAME": {
+      "description": "your updates channel name.",
+      "required": true
+      "value": ""
     }
   },
   "addons": [
