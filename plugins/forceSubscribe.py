@@ -1,4 +1,3 @@
-# copyright from https://github.com/DamienSoukara/FSub-Heroku.git
 import time
 import logging
 from config import Config
