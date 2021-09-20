@@ -35,6 +35,16 @@
       "description": "your username without @.",
       "required": true
       "value": "Alvin_junior"
+    },
+    "SUPPORT_GRP": {
+      "description": "your username support group without @.",
+      "required": true
+      "value": "Alvin_image_editor_group"
+    },
+    "UPDATES_CH": {
+      "description": "your username channel without @.",
+      "required": true
+      "value": "Alvin_image_editor"
     }
   },
   "addons": [
