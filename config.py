@@ -1,3 +1,4 @@
+# copyright from https://github.com/DamienSoukara/FSub-Heroku.git
 import os
 
 class Config(object):
