@@ -1,17 +1,14 @@
 {
-  "name": "Fsub-Heroku",
+  "name": "Fsub-TeleBot-ENG",
   "description": "A Telegram Bot to force users to join a specific channel before sending messages in a group!",
-  "logo": "https://i.imgur.com/YtlnKVy.jpg",
+  "logo": "https://telegra.ph/file/d19b68d228e2dc46eb8f5.jpg",
   "keywords": [
     "Telegram",
     "Bot",
-    "Fsub",
-    "Group",
-    "Channel"
+    "Force"
+    "subscribe",
   ],
-  "repository": "https://github.com/DamienSoukara/FSub-Heroku",
-  "website": "AmineSoukara.me",
-  "success_url": "t.me/ForceSubscribeRobot",
+  "repository": "https://github.com/fahrial2310/FSub-TeleBot-ENG",
   "env": {
     "APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
