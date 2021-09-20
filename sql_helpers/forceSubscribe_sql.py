@@ -1,9 +1,8 @@
-# copyright from https://github.com/DamienSoukara/FSub-Heroku.git
 from sqlalchemy import Column, String, Numeric, Boolean
 from sql_helpers import SESSION, BASE
 
 class forceSubscribe(BASE):
-    __tablename__ = "forceSubscribe"
+    __tablename__ = "FSub-TeleBot-ENG"
     chat_id = Column(Numeric, primary_key=True)
     channel = Column(String)
 
