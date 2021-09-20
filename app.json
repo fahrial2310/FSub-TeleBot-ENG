@@ -11,52 +11,57 @@
   ],
   "repository": "https://github.com/fahrial2310/FSub-TeleBot-ENG",
   "env": {
-    "APP_ID": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
-      "required": true
-      "value": ""
+        "BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": "",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "You Telegram Bot username without @",
+            "value": "AlvinFSubRobot",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "You Telegram Bot name",
+            "value": "Alvin FSub Bot",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+            "required": true
+        },
+        "OWNER_USERNAME": {
+            "description": "your username without @",
+            "value": "Alvin_junior",
+            "required": true
+        },
+        "SUPPORT_GRP": {
+            "description": "your username group without @",
+            "value": "Alvin_image_editor_group",
+            "required": true     
+        },
+        "UPDATES_CH": {
+            "description": "your username group without @",
+            "value": "Alvin_image_editor",
+            "required": true
+        },
+        "SUPPORT_NAME": {
+            "description": "your support grp name",
+            "value": "",
+            "required": true     
+        },
+        "UPDATES_NAME": {
+            "description": "your updates ch name",
+            "value": "",
+            "required": true
+        }
     },
-    "API_HASH": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
-      "required": true
-      "value": ""
-    },
-    "BOT_TOKEN": {
-      "description": "Your Bot Token Obtained From @BotFather.",
-      "required": true
-      "value": ""
-    },
-    "BOT_USERNAME": {
-      "description": "Your Bot username without @.",
-      "required": true
-      "value": ""
-    },
-    "OWNER_USERNAME": {
-      "description": "your username without @.",
-      "required": true
-      "value": "Alvin_junior"
-    },
-    "SUPPORT_GRP": {
-      "description": "your username support group without @.",
-      "required": true
-      "value": "Alvin_image_editor_group"
-    },
-    "UPDATES_CH": {
-      "description": "your username channel without @.",
-      "required": true
-      "value": "Alvin_image_editor"
-    },
-    "SUPPORT_NAME": {
-      "description": "your support channel name.",
-      "required": true
-      "value": ""
-    },
-    "UPDATES_NAME": {
-      "description": "your updates channel name.",
-      "required": true
-      "value": ""
-    }
-  },
   "addons": [
     {
     "plan": "heroku-postgresql",
