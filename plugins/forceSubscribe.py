@@ -1,3 +1,4 @@
+# copyright from https://github.com/DamienSoukara/FSub-Heroku.git
 import time
 import logging
 from config import Config
@@ -59,10 +60,10 @@ def _check_member(client, message):
               reply_markup=InlineKeyboardMarkup(
              [
                  [
-                     InlineKeyboardButton("💬 Subscribe", url=url)
+                     InlineKeyboardButton("☠️ Subscribe ☠️", url=url)
                  ],
                  [
-                     InlineKeyboardButton("🔕 UnMute Me", callback_data="onUnMuteRequest")
+                     InlineKeyboardButton("☠️ UnMute Me ☠️", callback_data="onUnMuteRequest")
                  ]
              ]
          )
