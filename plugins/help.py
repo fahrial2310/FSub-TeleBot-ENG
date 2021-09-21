@@ -6,6 +6,12 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 logging.basicConfig(level=logging.INFO)
 
+SUPPORT_NAME = Config.SUPPORT_NAME
+OWNER_USERNAME = Config.OWNER_USERNAME
+UPDATES_CH = Config.UPDATES_CH
+UPDATES_NAME = Config.UPDATES_NAME
+SUPPORT_GRP = Config.SUPPORT_GRP
+
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
 def _start(client, message):
     client.send_message(message.chat.id,
@@ -45,9 +51,9 @@ def map(pos):
     elif(pos==len(tr.HELP_MSG)-1):
         url = "https://github.com/fahrial2310/FSub-Telebot-ENG"
         button = [
-            [InlineKeyboardButton(text = '☠️ Creator ☠️', url="https://t.me{OWNER_USERNAME}"),
-            [InlineKeyboardButton(text = '☠️ {SUPPORT_NAME} ☠️', url="https://t.me/{SUPPORT_GRP}"),
-             InlineKeyboardButton(text = '☠️ {UPDATES_NAME} ☠️', url="https://t.me/{UPDATES_CH}")],
+            [InlineKeyboardButton(text = '☠️ Creator ☠️', url=f"https://t.me{OWNER_USERNAME}")],
+            [InlineKeyboardButton(text = f'☠️ {SUPPORT_NAME} ☠️', url=f"https://t.me/{SUPPORT_GRP}")],
+            [InlineKeyboardButton(text = f'☠️ {UPDATES_NAME} ☠️', url=f"https://t.me/{UPDATES_CH}")],
             [InlineKeyboardButton(text = '☠️ Source Code ☠️', url=url)],
             [InlineKeyboardButton(text = '◀️Back', callback_data = f"help+{pos-1}")]
         ]
