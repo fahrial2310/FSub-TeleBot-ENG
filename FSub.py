@@ -11,6 +11,10 @@ API_HASH = Config.API_HASH
 
 plugins = dict(
     root="plugins",
+    include=[
+        "forceSubscribe",
+        "help"
+    ]
 )
 
 
