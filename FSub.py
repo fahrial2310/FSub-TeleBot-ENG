@@ -17,7 +17,6 @@ app = Client(
       bot_token = Config.BOT_TOKEN,
       api_id = Config.APP_ID,
       api_hash = Config.API_HASH,
-      owner_username = Config.OWNER_USERNAME,
       updates_ch = Config.UPDATES_CH,
       support_grp = Config.SUPPORT_GRP,
       updates_name = Config.UPDATES_NAME,
