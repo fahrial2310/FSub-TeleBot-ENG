@@ -2,7 +2,7 @@ import os
 
 class Config(object):
 	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	BOT_NAME = int(os.environ.get("BOT_NAME")
+	BOT_NAME = int(os.environ.get("BOT_NAME"))
 	BOT_USERNAME = os.environ.get("BOT_USERNAME")
 	OWNER_USERNAME = os.environ.get("OWNER_USERNAME")
 	UPDATES_CH = os.environ.get("UPDATES_CH")
