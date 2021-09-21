@@ -51,7 +51,7 @@ def map(pos):
     elif(pos==len(tr.HELP_MSG)-1):
         url = "https://github.com/fahrial2310/FSub-Telebot-ENG"
         button = [
-            [InlineKeyboardButton(text = f'☠️ Creator ☠️', url=f"https://t.me{OWNER_USERNAME}")],
+            [InlineKeyboardButton(text = '☠️ Creator ☠️', url=f"https://t.me{OWNER_USERNAME}")],
             [InlineKeyboardButton(text = f'☠️ {SUPPORT_NAME} ☠️', url=f"https://t.me/{SUPPORT_GRP}")],
             [InlineKeyboardButton(text = f'☠️ {UPDATES_NAME} ☠️', url=f"https://t.me/{UPDATES_CH}")],
             [InlineKeyboardButton(text = '☠️ Source Code ☠️', url=url)],
