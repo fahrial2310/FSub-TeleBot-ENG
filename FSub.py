@@ -19,10 +19,9 @@ plugins = dict(
 
 
 Client(
-    "Fsub",
+    "ForceSubscribe",
     bot_token=BOT_TOKEN,
     api_id=APP_ID,
     api_hash=API_HASH,
     plugins=plugins,
-    workers=100,
 ).run()
