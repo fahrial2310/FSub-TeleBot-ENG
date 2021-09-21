@@ -1,6 +1,6 @@
 import logging
 from config import Messages as tr
-from config import config
+from config import Config
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
