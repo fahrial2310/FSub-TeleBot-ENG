@@ -23,7 +23,7 @@ app = Client(
       support_grp = Config.SUPPORT_GRP,
       updates_name = Config.UPDATES_NAME,
       support_name = Config.SUPPORT_NAME,
-      owner_username = Config.OWNER_USERNAME
+      owner_username = Config.OWNER_USERNAME,
       plugins = plugins
 )
 
