@@ -13,7 +13,7 @@ plugins = dict(
 )
 
 app = Client(
-     'FSub-TeleBot-ENG',
+     "Fsub",
       bot_token = Config.BOT_TOKEN,
       bot_name = Config.BOT_NAME,
       bot_username = Config.BOT_USERNAME,
