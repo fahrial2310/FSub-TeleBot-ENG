@@ -4,27 +4,21 @@ from config import Config
 
 logging.basicConfig(level=logging.INFO)
 
+BOT_TOKEN = Config.BOT_TOKEN
+
+APP_ID = Config.APP_ID
+API_HASH = Config.API_HASH
+
 plugins = dict(
     root="plugins",
-    include=[
-        "FSub-TeleBot-ENG",
-        "help"
-    ]
 )
 
-app = Client(
-     "Fsub",
-      bot_token = Config.BOT_TOKEN,
-      bot_name = Config.BOT_NAME,
-      bot_username = Config.BOT_USERNAME,
-      api_id = Config.APP_ID,
-      api_hash = Config.API_HASH,
-      updates_ch = Config.UPDATES_CH,
-      support_grp = Config.SUPPORT_GRP,
-      updates_name = Config.UPDATES_NAME,
-      support_name = Config.SUPPORT_NAME,
-      owner_username = Config.OWNER_USERNAME,
-      plugins = plugins
-)
 
-app.run()
+Client(
+    "Fsub",
+    bot_token=BOT_TOKEN,
+    api_id=APP_ID,
+    api_hash=API_HASH,
+    plugins=plugins,
+    workers=100,
+).run()
