@@ -52,8 +52,8 @@ def map(pos):
         url = "https://github.com/fahrial2310/FSub-Telebot-ENG"
         button = [
             [InlineKeyboardButton(text = '☠️ Creator ☠️', url=f"https://t.me{OWNER_USERNAME}")],
-            [InlineKeyboardButton(text = f'☠️ {SUPPORT_NAME} ☠️', url=f"https://t.me/{SUPPORT_GRP}")],
-            [InlineKeyboardButton(text = f'☠️ {UPDATES_NAME} ☠️', url=f"https://t.me/{UPDATES_CH}")],
+            [InlineKeyboardButton(text = f'☠️ {SUPPORT_NAME} ☠️', url=f"https://t.me/{SUPPORT_GRP}"),
+             InlineKeyboardButton(text = f'☠️ {UPDATES_NAME} ☠️', url=f"https://t.me/{UPDATES_CH}")],
             [InlineKeyboardButton(text = '☠️ Source Code ☠️', url=url)],
             [InlineKeyboardButton(text = '◀️Back', callback_data = f"help+{pos-1}")]
         ]
