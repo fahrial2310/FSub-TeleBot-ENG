@@ -15,7 +15,7 @@ SUPPORT_GRP = Config.SUPPORT_GRP
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
 def _start(client, message):
     client.send_message(message.chat.id,
-        text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
+        text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id, Config.BOT_NAME),
         parse_mode="markdown",
         reply_to_message_id=message.message_id
         )
