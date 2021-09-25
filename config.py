@@ -29,4 +29,4 @@ class Messages():
         f"[☠️](https://telegra.ph/file/ac48f2037d79b1763d089.jpg) **DEVELOPED BY {Config.OWNER_USERNAME} **"
       ]
 
-      START_MSG = f"**Hey there! [☠️](https://telegra.ph/file/ac48f2037d79b1763d089.jpg) [{}](tg://user?id={})**\n\nmy name is Config.{BOT_NAME} ,I Can Force Members To Join A Specific Channel Before Writing Messages In The Group.\n● Learn More At 👉 /help"
+      START_MSG = f"**Hey there! [☠️](https://telegra.ph/file/ac48f2037d79b1763d089.jpg) [{}](tg://user?id={})**\n\nmy name is {Config.BOT_NAME} ,I Can Force Members To Join A Specific Channel Before Writing Messages In The Group.\n● Learn More At 👉 /help"
