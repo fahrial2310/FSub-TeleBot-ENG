@@ -16,6 +16,7 @@ class Config(object):
 	SUDO_USERS.append(853393439)
 	SUDO_USERS = list(set(SUDO_USERS))
 
+from config import Config
 class Messages():
       HELP_MSG = [
         ".",
